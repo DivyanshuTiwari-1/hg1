@@ -16,7 +16,7 @@ A Next.js TypeScript application for managing property listings with features li
 
 ### 1. **Register User**
 ```http
-POST http://localhost:3000/api/auth/register
+POST http://hg1.vercel.app/api/auth/register
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
 
 ### 2. **Login User**
 ```http
-POST http://localhost:3000/api/auth/login
+POST http://hg1.vercel.app/api/auth/login
 Content-Type: application/json
 
 {
@@ -40,19 +40,19 @@ Content-Type: application/json
 
 ### 3. **Get All Properties**
 ```http
-GET http://localhost:3000/api/properties
+GET http://hg1.vercel.app/api/properties
 Authorization: Bearer <your_token>
 ```
 
 ### 4. **Get Properties with Filters**
 ```http
-GET http://localhost:3000/api/properties?type=apartment&minPrice=1000&maxPrice=2000&bedrooms=2&city=New%20York
+GET http://hg1.vercel.app/api/properties?type=apartment&minPrice=1000&maxPrice=2000&bedrooms=2&city=New%20York
 Authorization: Bearer <your_token>
 ```
 
 ### 5. **Create Property**
 ```http
-POST http://localhost:3000/api/properties
+POST http://hg1.vercel.app/api/properties
 Authorization: Bearer <your_token>
 Content-Type: application/json
 
@@ -79,13 +79,13 @@ Content-Type: application/json
 
 ### 6. **Get Single Property**
 ```http
-GET http://localhost:3000/api/properties/<property_id>
+GET http://hg1.vercel.app/api/properties/<property_id>
 Authorization: Bearer <your_token>
 ```
 
 ### 7. **Update Property**
 ```http
-PUT http://localhost:3000/api/properties/<property_id>
+PUT http://hg1.vercel.app/api/properties/<property_id>
 Authorization: Bearer <your_token>
 Content-Type: application/json
 
@@ -97,13 +97,13 @@ Content-Type: application/json
 
 ### 8. **Delete Property**
 ```http
-DELETE http://localhost:3000/api/properties/<property_id>
+DELETE http://hg1.vercel.app/api/properties/<property_id>
 Authorization: Bearer <your_token>
 ```
 
 ### 9. **Send Property Recommendation**
 ```http
-POST http://localhost:3000/api/recommendations/send
+POST http://hg1.vercel.app/api/recommendations/send
 Authorization: Bearer <your_token>
 Content-Type: application/json
 {
@@ -116,13 +116,13 @@ Content-Type: application/json
 
 ### 10. **Get Received Recommendations**
 ```http
-GET http://localhost:3000/api/recommendations/received
+GET http://hg1.vercel.app/api/recommendations/received
 Authorization: Bearer <your_token>
 ```
 
 ### 11. **Add to Favorites**
 ```http
-POST http://localhost:3000/api/favorites
+POST http://hg1.vercel.app/api/favorites
 Authorization: Bearer <your_token>
 Content-Type: application/json
 
@@ -133,13 +133,13 @@ Content-Type: application/json
 
 ### 12. **Get Favorites**
 ```http
-GET http://localhost:3000/api/favorites
+GET http://hg1.vercel.app/api/favorites
 Authorization: Bearer <your_token>
 ```
 
 ### 13. **Remove from Favorites**
 ```http
-DELETE http://localhost:3000/api/favorites
+DELETE http://hg1.vercel.app/api/favorites
 Authorization: Bearer <your_token>
 Content-Type: application/json
 
