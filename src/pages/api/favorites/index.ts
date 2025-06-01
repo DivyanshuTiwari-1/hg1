@@ -2,10 +2,10 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import connectDB from '@/lib/db';
 import User from '@/models/User';
 import Property from '@/models/Property';
-import { auth } from '@/middleware/auth';
+import { auth, AuthenticatedRequest } from '@/middleware/auth';
 import { getCache, setCache, deleteCache } from '@/lib/redis';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: AuthenticatedRequest, res: NextApiResponse) {
   await connectDB();
 
   switch (req.method) {
